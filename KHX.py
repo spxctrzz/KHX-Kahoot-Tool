@@ -1,8 +1,7 @@
 from colorama import init, Fore, Back, Style
 init()
-from kahoot import *
+from kahoot import client
 from time import sleep
-import keyboard
 from os import system
 import os
 import random
@@ -25,10 +24,10 @@ def bot_game():
     intro()
     random_name_choice = input("  | Random Bot Name? [Y/N] > ")
 
-    if random_name_choice == 'y' or 'Y' or 'yes' or 'YES':
-        bots_name = ''.join((random.choice(string.ascii_lowercase) for num in range(7)))
+    if random_name_choice == 'y' or random_name_choice == 'Y':
+         bots_name = ''.join((random.choice(string.ascii_lowercase) for num in range(7)))
     else:
-        bots_name = input("  | Bots Name > ")
+         bots_name = input("  | Bots Name > ")
 
     bots_amount = int(input("  | How Many Bots? > "))
     code = input("  | Kahoot Code > ")
@@ -51,12 +50,11 @@ def bot_game():
 def ascii_name_spammer():
     intro()
     repeating_word_choice = input("  | Have Name be Repeating Word? [Y/N] > ")
-    if repeating_word_choice == 'y' or 'Y' or 'yes' or 'YES':
+    if repeating_word_choice == 'y' or repeating_word_choice == 'Y':
         bots_name_raw = input("  | Bots Name > ")
         bots_name = (bots_name_raw*100)
     else:
-        bots_name = random_ascii_name = ''.join(
-            (random.choice(string.ascii_lowercase + string.punctuation + string.digits) for num in range(100)))
+        bots_name = random_ascii_name = ''.join((random.choice(string.ascii_lowercase + string.punctuation + string.digits) for num in range(100)))
 
     bots_amount = int(input("  | How Many Bots? > "))
     code = input("  | Kahoot Code > ")
