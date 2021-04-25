@@ -7,7 +7,7 @@ KHX is a (soon-to-be) multipurpose bot for Kahoot. It currently only has the abi
 |  ╠╩╗  ╠═╣  ╔╩╦╝  |
 |  ╩ ╩  ╩ ╩  ╩ ╚═  |
 -------------------|
-<\pre>
+
 
 INSTALLATION:
 
