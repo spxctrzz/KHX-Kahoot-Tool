@@ -7,7 +7,7 @@ import random
 import string
 
 bot = client()
-updates = 'v1.0, completely new look, profanity filter bypass, and more!
+updates = 'v1.0, completely new gui, profanity filter bypass, and more!
 
 def intro():
     os.system('cls')
